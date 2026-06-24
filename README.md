@@ -1,6 +1,6 @@
 # My Personal Portfolio
 
-Hey! Welcome to my portfolio website. It's a place where I showcase my projects, share what I've been working on, and make it easy for people to get in touch with me.
+Welcome to my portfolio website. It's a place where I showcase my projects, share what I've been working on, and make it easy for people to get in touch with me.
 
 Built with React on the frontend and Node.js/Express on the backend. The whole thing is responsive, so it looks good on your phone, tablet, or laptop.
 
