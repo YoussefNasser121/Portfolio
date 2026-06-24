@@ -47,9 +47,31 @@ const Contact = () => {
   };
 
   return (
-    <div className="container py-5">
-      <h2 className="mb-4">Contact Me</h2>
-      <form onSubmit={handleSubmit}>
+    <div className="container py-4 py-md-5">
+      <div className="row justify-content-center">
+        <div className="col-12 col-md-8 col-lg-6">
+          <h2 className="mb-4 text-center">Contact Me</h2>
+          
+          <div className="mb-5 p-4" style={{ backgroundColor: "rgba(255,255,255,0.05)", borderRadius: "8px" }}>
+            <h5 className="mb-3 text-center">Quick Contact Info</h5>
+            <div className="d-flex justify-content-center gap-4 flex-wrap">
+              <div className="text-center">
+                <p className="text-muted mb-1">📞 Phone</p>
+                <a href="tel:+201111008884" className="text-decoration-none" style={{ color: "#051c4f", fontSize: "1.1rem", fontWeight: "bold" }}>
+                  01111008884
+                </a>
+              </div>
+              <div className="text-center">
+                <p className="text-muted mb-1">✉️ Email</p>
+                <a href="mailto:youssefnasserea@gmail.com" className="text-decoration-none" style={{ color: "#051c4f", fontSize: "1.1rem", fontWeight: "bold" }}>
+                  youssefnasserea@gmail.com
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <h5 className="mb-3 text-center">Send Message</h5>
+          <form onSubmit={handleSubmit}>
         <input
           type="text"
           name="name"
@@ -89,9 +111,11 @@ const Contact = () => {
         <button type="submit" disabled={submitting} className="btn btn-dark btn-lg w-100">
           {submitting ? 'Sending...' : 'Send'}
         </button>
-      </form>
-      {status && <p className="mt-3 text-success">{status}</p>}
-      {error && <p className="mt-3 text-danger">{error}</p>}
+          </form>
+          {status && <p className="mt-3 text-success text-center">{status}</p>}
+          {error && <p className="mt-3 text-danger text-center">{error}</p>}
+        </div>
+      </div>
     </div>
   );
 };
