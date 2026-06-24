@@ -53,48 +53,6 @@ devfolio/
 - Node.js installed
 - A MongoDB account (free tier is fine)
 
-### Installation Steps
-
-**1. Clone it**
-```bash
-git clone https://github.com/YoussefNasser121/devfolio.git
-cd devfolio
-```
-
-**2. Set up the backend**
-```bash
-cd devfolio-server
-npm install
-```
-
-Create a `.env` file:
-```env
-PORT=5000
-MONGO_URI=your_mongodb_connection_string_here
-```
-
-**3. Set up the frontend**
-```bash
-cd ../devfolio-client
-npm install
-```
-
-### Running It Locally
-
-Open two terminal windows:
-
-**Terminal 1:**
-```bash
-cd devfolio-server
-npm start
-```
-This starts the backend on port 5000
-
-**Terminal 2:**
-```bash
-cd devfolio-client
-npm stThe Pages
-
 **Home Page**
 - My face (in a circle!)
 - A little about me
@@ -114,39 +72,7 @@ This starts the frontend on port 3000 (opens automatically)
 ## s what I've been building
 - Links straight to the repo
 
-**Contact Page**
-- My pWant to Customize It?
 
-**Change your contact info:**
-Edit `Contact.js` and update:
-```javascript
-<a href="tel:+201111008884">01111008884</a>
-<a href="mailto:youssefnasserea@gmail.com">youssefnasserea@gmail.com</a>
-```
-
-**Add/Remove skills:**
-In `HomePage.js`, just edit the skills array:
-```javascript
-const skills = ['React', 'Node.js', 'Python', /* etc */];
-```
-
-**Change the colors:**
-Open `App.css` and tweak the CSS variables at the top:
-```css ... */
-}
-```
-
-## }
-```
-
-## 📦 Production Build
-Building for Real
-
-When you're ready to deploy, run this:
-```bash
-cd devfolio-client
-npm run build
-```
 
 This creates an optimized version in the `build/` folder that's ready for production
 ## 🔧 API Endpoints
